@@ -10,6 +10,7 @@
    }
  }
 ```
+Credits to @joshwnj
 
 ### Some issues
 

@@ -17,4 +17,4 @@ Credits to @joshwnj
 In docker container you need to ensure that you have all additional elements
 installed, like git, ssh, and etc.
 
-@todo Verify what exact packages we do require to make this work
+@todo Verify what exact packages we do require to make this work more information can be found here https://github.com/galileo/knowledge/issues/1

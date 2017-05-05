@@ -1,6 +1,6 @@
 # Javascript
 
-**Q. What does hoisting mean?
+**Q. What does hoisting mean?**
 
 ```javascript
 // ReferenceError: noSuchVariable is not defined
@@ -18,3 +18,9 @@ var declaredLater = "Now it's defined!";
 // Outputs: "Now it's defined!"
 console.log(declaredLater);
 ```
+
+### Immediately-Invoked Function Expression  - IIFE
+
+(function() {
+  // some calculations
+}());

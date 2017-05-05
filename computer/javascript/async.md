@@ -15,12 +15,14 @@ async function name() {
   // If the promise will be rejected this function will throw those values
 }
 
-name().then(data => console.log(data)).catch((err) => log(err))
+name()
+  .then(data => console.log(data))
+  .catch((err) => log(err))
 ```
 
-- await - can be used only in an async funciton so we can not use it on top level
+- **await** - can be used only in an async function so we can't use it on top level
 
-But we can create IIFE here to execute it
+But we can create `IIFE` here to execute it
 
 ```javascript
 (async () => await name()())

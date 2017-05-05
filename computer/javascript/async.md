@@ -71,3 +71,95 @@ async () => {
   }
 }
 ```
+
+#### Use Promise all
+
+```javascript
+async () => {
+  const result = await Promise.all([
+    fetch('example.com/api/hello')
+    fetch('example.com/api/next')
+  ])
+
+  return {
+    firstCall: result[0],
+    nextCall: result[1]
+  }
+}
+```
+
+**A. We can destructure this faster**
+
+```javascript
+async () => {
+  const [firstCall, nextCall] = await Promise.all([
+    fetch('example.com/api/hello')
+    fetch('example.com/api/next')
+  ])
+
+  return {firstCall, nextCall}
+}
+```
+
+- **Promise.all** - accepts any iterable not only arrays
+
+
+### Await on normal value
+
+```javascript
+async () => {
+  const x = await 41
+}
+```
+
+Is equal to
+
+```javascript
+async () => {
+  const x = await Promise.resolve(42)
+}
+```
+
+### Async generators
+
+// @todo Learn about generators
+
+```javascript
+Symbol.asyncIterator = Symbol.asyncIterator || Symbol("asyncIterator") // Mock polyfill
+
+const delay = (ms) => new Promise( resolve => {
+  setTimeout(resolve, ms)
+})
+
+async function* customGenerator() {
+  await delay(1000)
+  yield 1
+  await delay(1000)
+  yield 2
+  await delay(1000)
+  yield 3
+}
+
+async function main () {
+  for await (const value of customGenerator()) {
+    console.log(value)
+  }
+}
+```
+
+To run this we need to transpile this because the `for await` is not in node for now
+
+To be more verbose this what is happening here here is the second implementation of `main` function.
+
+```javascript
+async function main () {
+  const generator = customGenerator()
+  while (true) {
+    const {value, done} = await generator.next()
+    if(done) {
+      break
+    }
+    console.log(value)
+  }
+}
+```

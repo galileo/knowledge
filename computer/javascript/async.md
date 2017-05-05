@@ -40,7 +40,8 @@ class ApiClient {
 ### Concurent api cals
 
 **BAD: because the calls would be done sequentialy**
-````
+
+```javascript
 async () => {
   const firstCall = await fetch('example.com/api/hello')
   const waitingUntilFirstCallEnds = await fetch('example.com/api/next')
@@ -51,6 +52,7 @@ async () => {
   }
 }
 ```
+
 **BETTER: Call both api same time but wait for responses**
 
 ```javascript

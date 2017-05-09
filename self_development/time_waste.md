@@ -15,11 +15,10 @@ Rules you want to follow:
 
 - Be Where You Are: In Mind And Body - awareness, what your are doing right now, be there, not somewhere else.
 - Focus on the most important things, not good, not better but on the best things to do - Step back and ask yourself **"Is this the best possible use of my time?"**
-> If something is not a HELL YES!, it’s a no. End of story. If you are not 100% behind what you’re currently doing, stop doing it. There are certainly better things you could be doing.
-> - Derek Sivers
-
--
+- Always Take The Higher Road - become consistent — even automatic — at choosing the harder, better road. Find joy in being and becoming the person you desire to be. You can develop confidence using your time in meaningful ways, and positively impacting those around you.
+- Be Who You Ideally Want To Become, Today -
 
 # Great sources
 
-https://journal.thriveglobal.com/theres-more-than-enough-time-when-you-use-the-time-you-have-68af009e307e
+[https://www.youtube.com/watch?v=IUtPjJDBs6I](Imagine your 80th birthday)
+[https://journal.thriveglobal.com/theres-more-than-enough-time-when-you-use-the-time-you-have-68af009e307e](You have more than enough time when you use it)

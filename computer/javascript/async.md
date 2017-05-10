@@ -1,6 +1,5 @@
 # Async
 
-
 ### Async basics
 
 ```javascript

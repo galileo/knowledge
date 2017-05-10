@@ -10,9 +10,15 @@
    }
  }
 ```
+
+> Dont use git@github.com:galileo/knowledge.git#master
+> Use git://github.com:galileo/knowledge.git#master
+
 Credits to @joshwnj
 
 ### Some issues
+
+> I you will use the notation with `git://...` this wont be needed
 
 In docker container you need to ensure that you have all additional elements
 installed, like git, ssh, and etc.

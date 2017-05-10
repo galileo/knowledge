@@ -17,4 +17,9 @@ Credits to @joshwnj
 In docker container you need to ensure that you have all additional elements
 installed, like git, ssh, and etc.
 
-@todo Verify what exact packages we do require to make this work more information can be found here https://github.com/galileo/knowledge/issues/1
+To be able to install packages from github repository on `alpine` you need to install two packages `git` and `openssh`
+
+```
+RUN apk update \
+  && apk add git openssh
+```

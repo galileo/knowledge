@@ -36,3 +36,7 @@ class CustomComponent extends Component {
   }
 }
 ```
+
+Todo:
+
+Watch Ryan's x-crash-course https://www.youtube.com/watch?v=TSkNIYpQ-hQ

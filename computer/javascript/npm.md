@@ -29,3 +29,13 @@ To be able to install packages from github repository on `alpine` you need to in
 RUN apk update \
   && apk add git openssh
 ```
+### Running multiple tasks
+
+```javascritp
+"scripts": {
+  "start": "npm-run-all --parallel lint start:debug start:server",
+  "lint": "eslint . --ext .js",
+  "start:debug": "node-debug server.js",
+  "start:server": "nodemon server.js"
+}
+```

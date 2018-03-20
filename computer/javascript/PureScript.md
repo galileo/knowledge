@@ -44,6 +44,8 @@ getGreater n m | n > m = n
                | otherwise m
 ```
 
+The pipe `|` is called guard, it can be compared to `if` and `else` statement.
+
 Special characters
 ----
 

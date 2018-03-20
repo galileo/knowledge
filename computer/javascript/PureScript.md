@@ -22,6 +22,28 @@ returnInt :: Int -> Int
 returnInt a = a
 ```
 
+
+Structures
+********
+
+```
+type Match = { team :: String,
+               score :: Int
+            }
+            
+data FirstMatch = MatchA Match
+            
+instance showMatch :: Show FirstMatch where
+  show (MatchA { team, score }) =
+    "MatchA { team: " <> show team 
+    <> ", score: " <> show score 
+    <> "})"
+    
+    
+whoAmI :: String -> Int -> FirstMatch
+whoAmI team score = MatchA { team, score }
+```
+
 Function variations
 ------
 

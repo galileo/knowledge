@@ -13,3 +13,14 @@ browserify().plugin(hmr, {
   hostname: '0.0.0.0'
 })
 ```
+
+
+### 2022 February
+
+The docker for mac was hanging on **starting** status. If that is what is happening for you. You can try to remove all the data taht were configured before:
+
+```
+rm -rf ~/Library/Group\ Containers/group.com.docker
+rm -rf ~/Library/Containers/com.docker.docker
+rm -rf ~/.docker
+```
